@@ -1,0 +1,607 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+/*Star multi-layer parallax template*/
+/*-------This is the shop style customise sheet for star template-------*/
+/*author :- Gokul Raghu M Aka Aj for Pixelglimpse*/
+/*Designer :- Gokul raghu m*/
+/* Copyright: (C) Pixelglimpse 2014 */
+/*Version : 1.0*/
+
+
+
+
+/*----------------------------------less color options----------------------------------------*/
+
+@promcolor: #ea2e2b;        /*---------theme prominent color------------*/
+
+@main_head_color:#fff;      /*---------main head color------------*/
+
+@sub_head_color:#555;       /*---------sub head color------------*/
+
+@sub_head_add_color:#fff;   /*---------sub head negtive area color------------*/
+
+@main_text_color:#888; 		/*---------main text color color------------*/
+
+
+/*----------------------------------less font options----------------------------------------*/
+
+@main_text_font: "Open Sans";       /*---------main texts font------------*/
+
+@sub_text_font: "Source Sans Pro";  /*---------sub heads and text font------------*/
+
+@main_head_font: "Montserrat";      /*---------main heading font------------*/
+
+@shop_num_font: "Roboto Slab";      /*---------number fonts------------*/
+
+@shop_spcl_font: "Crimson Text";    /*---------special italic fonts------------*/
+
+
+/*---------------------------parallax additional (shop) section-------------------------*/
+
+#sh-bg-main>div:nth-of-type(2)
+{
+    background: rgba(0,0,0,0.7);
+}
+/*------------------------------- shop head area ---------------------------------------*/
+
+.shop-head-main h1
+{
+	color: @main_head_color;
+	font-family: @main_head_font;
+	border: solid 2px @main_head_color;
+}
+.shop-head-main h3
+{
+	font-family: @main_text_font;
+	color: @main_head_color;
+}
+.shop-head-main h3 span
+{
+	color: @promcolor;
+}
+/*---------------------------------shop owl section----------------------------------*/
+/*----slide1----*/
+.sh-slide-1-btn
+{
+	font-family: @main_text_font;
+}
+.sh-slide-1-btn a
+{
+	color: #fff;
+}
+.sh-slide-1-btn a:hover
+{
+	color: @promcolor;
+}
+/*----slide2-----*/
+.sh-slide-2 h1
+{
+	font-family: @main_text_font;
+	color: #fff;
+}
+.sh-slide-2 h5
+{
+	font-family: "Crimson Text";
+	color: #cfcfcf;
+}
+.sh-slide-2-btn
+{
+	font-family: @main_text_font;
+}
+.sh-slide-2-btn a
+{
+	color: #fff;
+}
+.sh-slide-2-btn a:hover
+{
+	color: @promcolor;
+}
+/*-----slide3------------*/
+.sh-slide-3 h1
+{
+	font-family: @main_head_font;
+	color: #fff;
+}
+.sh-slide-3 h1 span
+{
+	color: @promcolor;
+}
+.sh-slide-3 h5
+{
+	font-family: "Crimson Text";
+	color: #cfcfcf;
+}
+/* shopowl navigation*/
+.shop_owl .owl-controls .owl-page span
+{ 
+	background-color: #999 !important;
+}
+.shop_owl .owl-controls .owl-page.active span
+{
+	background-color: @promcolor !important;
+}
+/*-------------------------------------item details-----------------------------------*/
+.sh-item-hover
+{
+	background:rgba(0,0,0,0.6);
+}
+
+.sh-item-links a
+{
+	color: #fff;
+	border: solid 1px #fff;
+}
+.sh-item-links a:hover
+{
+	color: @promcolor;
+}
+/* item content*/
+.sh-item-content
+{
+	font-family: @sub_text_font;
+}
+.sh-item-content h4
+{
+	color: @sub_head_color;
+}
+.sh-item-content h6
+{
+	color: @main_text_color;
+}
+.sh-item-content-price
+{
+	border: solid 2px @main_text_color;
+}
+.sh-item-content-price div
+{
+	color: @sub_head_color;
+	font-family: @shop_num_font;
+}
+.sh-item-content-price div span
+{
+	color: @main_text_color;
+}
+/*----item highlighters----*/
+.sh-hi-area
+{
+	background-color: @promcolor;
+	color: #fff;
+	font-family: @sub_text_font;
+}
+.sh-item-add a
+{
+	color: #fff;
+	font-family: @sub_text_font;
+}
+.sh-item-add a:hover
+{
+	color: @promcolor;
+}
+/*---------------------side panel started-----------------------------*/
+.sh-cart-btn
+{
+	border: solid 1px @sub_head_color;
+	color: @sub_head_color;
+	font-family: @sub_text_font;
+}
+.sh-cart-btn:hover
+{
+	color: #fff;
+	border: solid 1px @sub_head_color;
+	background-color: @sub_head_color;
+}
+.sh-cart-amt h3
+{
+	font-family: @shop_num_font;
+	color: @promcolor;
+}
+.sh-cart-amt h6
+{
+	font-family: @sub_text_font;
+	color: @main_text_color;
+}
+/*------ side panle category styles------*/
+.sh-side-panel-cat h4
+{
+	font-family: @sub_text_font;
+	color: @sub_head_color;
+	border: solid 1px #999; 
+	border-top: none;border-left: none;border-right: none;
+}
+.sh-side-panel-cat ul li
+{
+	font-family: @main_text_font;
+}
+.sh-side-panel-cat ul li a
+{
+	color: @main_text_color;
+}
+.sh-side-panel-cat ul li a:hover
+{
+	color: @promcolor;
+}
+/*-----side panel trending styles-----*/
+.sh-side-panel-trend h4
+{
+	font-family: @sub_text_font;
+	color: @sub_head_color;
+	border: solid 1px #999; 
+	border-top: none;border-left: none;border-right: none;
+}
+.sh-side-panel-trend-img a
+{	
+	font-family: @sub_text_font;
+	color: #fff;
+}
+.sh-side-panel-trend-img:hover img
+{
+	color: @sub_head_color;
+	background-color: #999;
+}
+.sh-side-panel-trend-img:hover > a
+{
+	color: @sub_head_color;
+}
+.sh-side-panel-trend-img a:hover
+{
+	color: @promcolor;
+}
+/*-----------------------related section------------------------------------*/
+.sh-related-header h4
+{
+	font-family: @sub_text_font;
+	color: @sub_head_color;
+	border: solid 1px @main_text_color;
+	border-top: none;border-left: none;border-right: none;
+}
+.sh-rel-img-fg
+{
+	background-color: #fff;
+}
+/*CONTENT AREA*/
+.sh-rel-content h4
+{
+	font-family: @sub_text_font;
+	color: @sub_head_color;
+}
+.sh-rel-content h6
+{
+	font-family: "Crimson Text";
+	color: @main_text_color;
+}
+.sh-rel-content p
+{
+	color: @main_text_color;
+	font-family: @main_text_font;
+}
+.sh-rel-content p span
+{
+	color: @sub_head_color;
+	font-family: @main_text_font;
+}
+/*------navigation related-----*/
+.customNavigation a
+{
+    color: #fff;
+}
+.prev i
+{
+	color: @sub_head_color;
+	border: solid 1px @sub_head_color;
+}
+.next i
+{
+	color: @sub_head_color;
+	border: solid 1px @sub_head_color;
+}
+.prev i:hover
+{
+	color: @promcolor; 
+	border: solid 1px #999;
+}
+.next i:hover
+{
+	color: @promcolor; 
+	border: solid 1px #999;
+}
+/*-------------------------footer main section--------------------------------*/
+/*-----footr strip-------*/
+.footer-strip
+{
+	background: #656565;
+	font-family: @main_text_font;
+}
+.footer-strip a
+{
+	color: #fff;
+}
+.footer-strip a:hover
+{
+	color:  #c5c5c5;
+}
+/*----------------------------pre footer section styles---------------------------------*/
+.pre-foot-main h4
+{
+	color: @sub_head_color;
+	font-family: @sub_text_font;
+	border: solid 1px @main_text_color;
+	border-top: none;border-left: none;border-right: none;
+}
+.pre-foot-main ul li
+{
+	font-family: @main_text_font;
+}
+.pre-foot-main ul li a
+{
+	color: @main_text_color;
+}
+.pre-foot-main ul li a:hover
+{
+	color: @promcolor;
+}
+/*----pre footer app-----*/
+.pre-foot-app h4
+{
+	color: @sub_head_color;
+	font-family: @sub_text_font;
+	border: solid 1px @main_text_color;
+	border-top: none;border-left: none;border-right: none;
+}
+.pre-foot-app ul li
+{
+	font-family: @main_text_font;
+}
+/*pre footer pay*/
+.pre-foot-pay h4
+{
+	color: @sub_head_color;
+	font-family: @sub_text_font;
+	border: solid 1px @main_text_color;
+	border-top: none;border-left: none;border-right: none;
+}
+.pre-foot-pay ul li
+{
+	font-family: @main_text_font;
+}
+/*------ product page styles complete finished ------*/
+/*=========================================================================================
+							   item details page started
+===========================================================================================*/
+/*---------item nav navigation--------------------*/
+/*owl pagenation*/
+.sh_item_owl .owl-controls .owl-page span
+{ 
+
+	background-color: @promcolor !important;
+	color: #fff;
+	font-family: @main_text_font;
+}
+.sh_item_owl .owl-controls .owl-page.active span
+{
+	background-color: @promcolor !important;
+	font-family: @main_text_font;
+}
+/*---------------content area styles------------------*/
+.sh-item-content-main h2
+{
+	font-family:@sub_text_font;
+	color: @sub_head_color;
+}
+.sh-item-content-main ul li i
+{
+	color: @promcolor;
+}
+.sh-item-content-main span
+{
+	color: #999;
+	font-family: @main_text_font;
+}
+.sh-item-content-main h3
+{
+	color: @sub_head_color;
+	font-family: @shop_num_font;
+}
+.sh-item-content-main p
+{
+	font-family: @main_text_font;
+	color: @main_text_color;
+}
+.sh-item-tags
+{
+	border: solid 2px #c5c5c5;
+	border-left: none;
+	border-right: none;
+}
+/*quantitiy style*/
+.sh-item-qty span
+{
+	color: @main_text_color;
+	font-family: @main_text_font;
+}
+.sh-item-qty a
+{
+	color: #fff;
+	background-color: @promcolor;
+}
+.sh-item-qty a span
+{
+	color: #333;
+	background-color: #c9c9c9;
+}
+/*selector style*/
+.sh-item-selector span
+{
+	color: @main_text_color;
+	font-family: @main_text_font;
+}
+.sh-item-selector select
+{
+	color: @sub_head_color;
+	background-color: #c9c9c9;
+	font-family: @main_text_font;
+}
+.sh-item-btn p
+{
+	color: @main_text_color;
+	font-family: @main_text_font;
+}
+.sh-item-btn p span
+{
+	color: @sub_head_color;
+}
+.sh-item-btn a
+{
+	color: @sub_head_color;
+	font-family: @sub_text_font;
+	border: solid 1px @main_text_color;
+}
+.sh-item-btn a:hover
+{
+	background-color: #333;
+	color: #fff;
+	border: solid 1px #333;
+}
+/*------ details and review tab area------*/
+.sh-tab-area ul li a
+{
+	font-family: @main_text_font;
+	color: @main_text_color;
+}
+.tab-content h3
+{
+	font-family: @sub_text_font;
+	color: @sub_head_color;
+}
+.tab-content p
+{
+	font-family: @main_text_font;
+	color: @sub_head_color;
+}
+.tab-content h4
+{
+	font-family: @main_text_font;
+	color: @sub_head_color;
+	border: solid 1px #c8c8c8;
+}
+.tab-content h5
+{
+	font-family: @main_text_font;
+	color: @main_text_color;
+}
+.tab-content h6
+{
+	font-family: "Crimson Text";
+	color: @main_text_color;
+}
+.tab-content ul li i
+{
+	color: @promcolor;
+}
+/*=============================================================================================
+							       cart page styles started
+===============================================================================================*/
+.sh-cart-head h1
+{
+	font-family: @sub_text_font;
+	color: @sub_head_color;
+}
+/*promo code*/
+.sh-cart-promo a
+{
+	color: @main_text_color;
+	font-family: @sub_text_font;
+}
+.sh-cart-promo input
+{	
+	font-family: @main_text_font;
+	border: solid 1px #c8c8c8;
+	color: @main_text_color;
+}
+.sh-cart-promo a:hover
+{
+	color: @promcolor;
+}
+/*table creation*/
+.sh-cart-table table tr
+{
+	border: solid 1px #fff;
+	background-color: #c9c9c9;
+}
+.sh-cart-table th
+{
+	border: solid 1px #fff;
+	background: #f1f1f1;
+	font-family: @main_text_font;
+	color: @sub_head_color;
+}
+
+/*table width classes*/
+.sh-cart-table td
+{
+	background: #f7f7f7;
+	border: solid 1px #fff;
+}
+.sh-cart-table td i
+{
+	color: #fff;
+	background-color: @promcolor;
+}
+.sh-cart-table td a
+{
+	color: @sub_head_color;
+}
+.sh-cart-table td a:hover
+{
+	color: @promcolor;
+}
+.sh-cart-table p
+{
+	color: #fff;
+	background-color: @promcolor;
+}
+.sh-cart-table span
+{
+	background-color: #c9c9c9;
+	color: @sub_head_color;
+}
+.cart-btn
+{
+	font-family: @sub_text_font;
+}
+.cart-btn a
+{
+	border: solid 1px #c8c8c8;
+	color: @main_text_color;
+}
+.cart-btn a:hover
+{
+	border: solid 1px #333;
+	background-color: #333;
+	color: #fff;
+}
+/*cart totals*/
+.sh-cart-total h2
+{
+	font-family: @sub_text_font;
+	border: solid 1px #c8c8c8;
+	border-top: none;border-left: none;border-right: none;
+}
+.sh-cart-total th
+{
+	border: solid 1px #c8c8c8;
+	font-family: @main_text_font;
+	color: @sub_head_color;
+}
+.sh-sub-cart-total
+{
+	background-color: #f7f7f7;	
+}
+/*shipment finder*/
+ .sh-shipment a
+ {
+ 	font-family: @main_text_font;
+ 	color: @main_text_color;
+ }
+.sh-shipment a:hover
+ {
+  	color: @promcolor;
+ }

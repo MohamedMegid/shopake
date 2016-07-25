@@ -1,0 +1,17 @@
+.button-flat {
+    box-shadow: none;
+    transition-property: background;
+    transition-duration: 0.3s;
+    background: #3F688D none repeat scroll 0% 0%;
+    border: medium none;
+    text-shadow: none;
+    color: rgb(255, 255, 255);
+}
+
+.button-flat:hover{
+	background: #3F688D none repeat scroll 0% 0%;
+}
+
+i.glyphicon.glyphicon-chevron-up.clickable, i.glyphicon.glyphicon-remove.removepanel.clickable{
+	display: none !important;
+}

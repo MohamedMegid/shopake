@@ -1,0 +1,460 @@
+/*===========================================================================================
+							additional page styles (LESS)
+=============================================================================================*/
+
+/*----------------------------------less color options----------------------------------------*/
+
+@promcolor: #ea2e2b;      /*---------theme prominent color------------*/
+
+@add_style_head:#fff;	  /*---------home page header color------------*/
+
+@add_head_color:#555;     /*---------home page text color------------*/
+
+@add_text_color:#888;      /*---------home page text color------------*/
+
+
+/*------------------------------less color overlay options-----------------------------------*/
+
+@ovl_home_color:rgba(0,0,0,0.8);      /*--------- home overlay ------------*/
+
+/*----------------------------------less font options----------------------------------------*/
+
+@home_head_font: "Open Sans";       /*---------main head font------------*/
+
+@sub_text_font: "Raleway";          /*---------sub heads and text font------------*/
+
+@main_home_font: "nexa_b";          /*---------home head font------------*/
+
+@main_head_font: "Montserrat";      /*---------main heading font------------*/
+
+@main_num_font: "Roboto Slab";      /*---------number fonts------------*/
+
+
+
+/*===========================================================================================
+							          BLOG STYLESHEETS
+=============================================================================================*/
+#blog
+{
+	background: #f5f5f5;
+}
+.blog-ovl
+{
+	background: rgba(0,0,0,0.5);
+}
+.blog-head
+{
+	font-family: @main_head_font;
+}
+.blog-head h1
+{
+    color: @add_style_head;
+	border: solid 5px @add_style_head;
+}
+.blog-head p
+{
+	font-family: @home_head_font;
+	color: #fff;
+}
+.blog-sub-head h2
+{
+	font-family: @home_head_font;
+	color: @add_head_color;
+	border: solid 1px #c8c8c8;
+	border-left: none;border-right: none;border-top: none;
+}
+/*---------blog boxes started--------------*/
+.blog-sim-main
+{
+	background-color: #fff;
+}
+/*full width post*/
+.blog-icons a
+{
+	color: #fff;
+	background-color: @promcolor;
+}
+.blog-icons a:hover
+{
+	background-color: #f1f1f1;
+	color: @add_head_color;
+}
+/*TEXT AREA POST*/
+.blog-text-main
+{
+	font-family: @home_head_font;
+}
+.blog-text-main h3
+{
+	color: @add_head_color;
+	border: solid 1px #c8c8c8;
+	border-left: none;border-right: none;border-top: none;
+}
+.blog-text-main p
+{
+	color: @add_text_color;
+}
+.blog-text-main h5
+{
+	color: @add_text_color;
+}
+.blog-text-main h6
+{
+	color: @add_text_color;
+}
+.blog-text-main span
+{
+	color: @add_text_color;
+}
+.blog-text-main span a
+{
+	color: @add_text_color;
+}
+.blog-text-main span a:hover
+{
+	color: @promcolor;
+}
+/*BLOG-BTN*/
+.blog-btn a
+{
+	font-family: @home_head_font;
+	color: @add_head_color;
+	border: solid 1px #c8c8c8;
+} 
+.blog-btn a:hover
+{
+	background-color: @add_head_color;
+	border: solid 1px @add_head_color;
+	color: #fff;
+
+}
+/*owl navigation*/
+.blog_owl .owl-controls .owl-page span
+{ 
+	color: @promcolor;
+}
+.blog_owl .owl-controls .owl-page.active span
+{
+	background-color: @promcolor !important;
+	font-family: @home_head_font;
+}
+/* BLOG LOAD MORE BTN*/
+.blog-load-btn
+{
+	font-family: @home_head_font;
+}
+.blog-load-btn a
+{
+	color: @add_head_color;
+	border: solid 1px #c8c8c8;
+}
+.blog-load-btn a:hover
+{
+	background-color: @add_head_color;
+	border: solid 1px @add_head_color;
+	color: #fff;
+}
+
+/*===========================================================================================
+							    usful short code stylesheet
+=============================================================================================*/
+
+/*heading*/
+.short-head-main
+{
+	background-color: @add_head_color;
+}
+.short-head h1
+{
+	color: #fff;
+	font-family: @main_head_font;
+	border: solid 5px #fff;
+}
+.short-head p
+{
+	color: #fff;
+	font-family: @home_head_font;
+}
+/*--------main heading style in shortcodes----------*/
+.short-main-heads h2
+{
+	font-family: @home_head_font;
+	color: @add_head_color;
+	border: solid 1px #c8c8c8;
+	border-left: none;border-right: none;border-top: none;
+}
+.firstcharacter 
+{   
+	color: @promcolor; 
+	font-family: @home_head_font; 
+}
+.short-inlined i
+{
+	border: solid 1px @promcolor;
+	color: @promcolor;
+}
+.short-inlined h4
+{
+	font-family: @home_head_font;
+	color: @add_head_color;
+	border: solid 1px #c8c8c8;
+	border-left: none;border-right: none;border-top: none;
+}
+/*-----------bootstrap row text style-----------------*/
+.short-basic-text h4
+{
+	font-family: @home_head_font;
+}
+.short-basic-text p
+{
+	font-family: @home_head_font;
+	color: @add_text_color;
+}
+/*---------------tab style area-----------------------*/
+.sh-tab-area ul li a
+{
+	font-family: @home_head_font;
+	color: @add_text_color;
+}
+.tab-content h3
+{
+	font-family: "Source Sans Pro";
+	color: @add_head_color;
+}
+.tab-content p
+{
+	font-family: @home_head_font;
+	color: @add_head_color;
+}
+.tab-content h4
+{
+	font-family: @home_head_font;
+	color: @add_head_color;
+	border: solid 1px #c8c8c8;
+	border-left: none;border-right: none;border-top: none;
+}
+.tab-content h5
+{
+	font-family: @home_head_font;
+	color: @add_text_color;
+}
+.tab-content h6
+{
+	font-family: "Crimson Text";
+	color: @add_text_color;
+}
+.tab-content ul li i
+{
+	color: @promcolor;
+}
+/*-------collapse-------------*/
+.panel-heading a
+{
+	font-family: @home_head_font;
+	color: #fff;
+}
+.panel-heading a:hover
+{
+	color: #f1f1f1;
+}
+.panel-default > .panel-heading
+{
+	background-color: @promcolor;
+}
+/*---------------------------------------------------------------------
+Skilsets
+-----------------------------------------------------------------------*/
+/*-------lined---------*/
+.block_skills h3
+{
+	color: @add_head_color;
+	font-family: @home_head_font;
+}
+.block_skills .skill
+{
+	font-family: @home_head_font,sans-serif; 
+}
+.skill p
+{
+    font-family: @home_head_font,sans-serif;  
+}
+.block_skills .level_rail 
+{
+    background: #999;
+}
+.block_skills .level_rail .level .bar 
+{
+    background: @promcolor;
+}
+.block_skills .level_rail .note 
+{
+    border: 1px solid @add_head_color;
+    color: @add_head_color;
+}
+.block_skills .level_rail .note:after 
+{
+	border-top-color: @add_head_color;
+}
+.block_skills .level_rail .note:before 
+{
+   border-top-color: @add_head_color;
+}
+/*-------ringed-------*/
+/*Pie Chart*/
+.theskill
+{
+	font-family: @home_head_font, sans-serif;
+	color: @add_head_color;
+}
+.stitle
+{
+	font-family: @home_head_font, sans-serif;
+    color: @add_head_color;
+}
+/*================================================================================================
+							    stand alone page stylesheet
+==================================================================================================*/
+
+.stand-ovl
+{
+	background: rgba(0,0,0,0.5);
+}
+.stand-head h1
+{
+    color: #fff;
+	border: solid 5px #fff;
+}
+.stand-head p
+{
+	font-family: @home_head_font;
+	color: #fff;
+}
+/*-------------------------STAND CONTENT AREA------------------------------*/
+/*stand content head*/
+.stand-content-head h5
+{
+	font-family: @home_head_font;
+	color: @add_text_color;
+}
+.stand-content-head h1
+{
+	font-family: @main_head_font;
+	color: @add_head_color;
+}
+.stand-icon-box
+{
+	border: solid 1px @promcolor;
+}
+/*ABOUT ICON*/
+.stand-text-box h4
+{
+	font-family: @main_head_font;
+	color: @add_head_color;
+}
+.stand-text-box p
+{
+	font-family: @home_head_font;
+	color: @add_text_color;
+}
+/*-------video section-----*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////
+										video section
+//////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.video-poster-image
+{
+	background:rgba(255,255,255,0.8) !important;
+}
+.video-section .video-overlay 
+{
+	background-color: rgba(255,255,255,0.7);
+}
+.video-section .video-overlay-text span
+{
+	font-family:@main_head_font;
+} 
+.video-section .video-overlay-text span span
+{
+	color: @promcolor;
+}
+/*----------------------------- ALT TEAM STYLES-----------------------------*/
+.alt-team-img-hover-bg
+{
+	background-color: @promcolor;
+}
+.alt-team-img-hover-icon i
+{
+	color: #fff;
+	border: solid 1px #fff;
+}
+.alt-team-img-hover-icon a:hover i
+{
+	background-color: #fff;
+	color: @promcolor;
+}
+/*team content area*/
+.alt-team-content h6
+{
+	font-family: @home_head_font;
+	color: @add_text_color;
+}
+.alt-team-content h3
+{
+	font-family: @main_head_font;
+	color: @promcolor;
+}
+.alt-team-content p
+{
+	font-family: @home_head_font;
+	color: @add_text_color;
+}
+/*--------------------------- coming soon styles ---------------------------------*/
+.com-ovl
+{
+	background: rgba(0,0,0,0.4);
+}
+.com-head-text h1
+{
+	font-family: @home_head_font;
+	color: #fff;
+}
+.com-head-text h3
+{
+	font-family: @home_head_font;
+	color: #fff;
+}
+.com-social a
+{
+	color: #fff;
+	background-color: @promcolor;
+}
+.com-social a:hover
+{
+	background-color: #fff;
+	color: @promcolor;
+}
+/*==========================================================================================
+                                  404 page style
+============================================================================================*/
+.found-text-main h1
+{
+	font-family: @main_head_font;
+	color: #fff;
+	border: solid 5px #fff;
+}
+.found-text-main h2
+{
+	font-family: @home_head_font;
+	color: #fff;
+	background : rgba(0,0,0,0.6);
+}
+.found-text-main a
+{
+	background: rgba(255,255,255,0.7);
+	font-family: @home_head_font;
+	color: @add_head_color;
+}
+.found-text-main a:hover
+{
+	background: rgba(255,255,255,0.9);
+}

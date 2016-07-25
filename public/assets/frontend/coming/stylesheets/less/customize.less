@@ -1,0 +1,1067 @@
+/*============================================================================================
+                            main less sheet for star-template                                 
+==============================================================================================*/
+
+
+/*----------------------------------less color options----------------------------------------*/
+
+@promcolor: #ea2e2b;        /*---------theme prominent color------------*/
+
+@main_page_bg:#fff;			/*---------main page bg color------------*/
+
+@main_head_color:#ea2e2b;   /*---------main head color------------*/
+
+@sub_head_color:#555;       /*---------sub head color------------*/
+
+@sub_head_add_color:#fff;   /*---------sub head negtive area color------------*/
+
+@main_text_color:#888; 		/*---------main text color color------------*/
+
+@neg_text_color:#fff; 		/*---------negative area text color------------*/
+
+@border_line_color:#e2e2e2; /*---------border line colors------------*/
+
+/*------------------------------less color overlay options-----------------------------------*/
+
+@ovl_home_color:rgba(0,0,0,0.8);      /*--------- home overlay ------------*/
+
+@ovl_parallax_color:rgba(0,0,0,0.6);  /*--------- parallax section overlays ------------*/
+
+/*----------------------------------less font options----------------------------------------*/
+
+@main_text_font: "Open Sans";       /*---------main texts font------------*/
+
+@sub_text_font: "Raleway";          /*---------sub heads and text font------------*/
+
+@main_home_font: "nexa_b";          /*---------home head font------------*/
+
+@main_head_font: "Montserrat";      /*---------main heading font------------*/
+
+@main_num_font: "Roboto Slab";      /*---------number fonts------------*/
+
+@main_spcl_font: "Vollkorn";        /*---------special italic fonts------------*/
+
+
+/*----animation section------*/
+.stuck 
+{
+    background: rgba(0,0,0,0.9);
+}    
+/*///////////////////////////////////////////////////////////////////////////////////////////////
+                                         common classes 
+////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.main-page-bg
+{
+	background-color: @main_page_bg;	
+}
+
+.bg-light
+{
+	background-color:#fff;	
+}
+/*--------------mobile menu styles----------------*/
+.slicknav_menu {
+	background :rgba(0,0,0,0.0);
+}
+.slicknav_menu ul
+{
+	font-family: @main_text_font;
+	background :rgba(0,0,0,0.8);
+}
+/*//////////////////////////////////////////////////////////////////////////////////
+                              main bg section
+//////////////////////////////////////////////////////////////////////////////////*/
+.main-ovl-bg
+{
+	background:@ovl_home_color;
+}
+/*background section finished*/
+/*///////////////////////////////////////////////
+           right navigation 
+////////////////////////////////////////////////*/
+.right-nav ul li
+{
+	background-color: @promcolor;
+}
+.right-nav ul li i
+{
+	color: #fff;
+}
+.top-hover-nav a
+{
+	color: #fff;
+}
+/*-------right side nav completed----------------*/
+/*/////////////////////////////////////////home heading//////////////////////////////////////*/
+.home-text
+{
+	font-family: @main_home_font;
+}
+.home-text h1
+{
+	color:@main_head_color;
+}
+.home-text h2
+{
+	color: @sub_head_add_color;
+}
+/*///////////////////////////////////////main navigation section //////////////////////////////*/
+#navigation_right
+{
+	background-color: rgba(255,255,255,1);
+}
+/* main navigation*/
+.navmenu ul li a 
+{
+	font-family: @main_text_font;
+	color:@main_text_color;
+}
+.navmenu ul li a:hover
+{
+	color: #fff; 
+}
+.navmenu ul li a:before
+{
+	background-color:@promcolor;
+}
+
+.navmenu ul li:hover > a
+{
+	color: #FFF;
+}
+/* Sub menu */
+.navmenu ul li.dropdown ul li a 
+{
+	font-family: @main_text_font;
+	color:#fff;
+}
+.navmenu ul li.active a
+{
+	color: #fff;
+}
+.navmenu ul li.dropdown ul li.active a,
+.navmenu ul li.dropdown ul li a:hover {
+	color: #fff;
+}
+.navmenu ul li.dropdown ul li a:before
+{
+	background-color: @promcolor;
+}
+.navmenu ul li.dropdown ul li:hover a:before
+{
+	background-color: #2b2b2b;
+}
+/*/////////////////////////////////////// highlight section/////////////////////////////////////*/
+#highlight
+{
+	background-color: @main_page_bg;
+}
+/*----------left top main box (1)--------*/
+.hi-left-main-box
+{
+	border: solid 1px @border_line_color;
+	border-left: none;
+	border-top: none;
+}
+.hi-left-content h4
+{
+	font-family: @main_text_font;
+	color: @sub_head_color;
+}
+.hi-left-content p
+{
+	color: @main_text_color;
+}
+.hi-left-icon-ring
+{
+	border: solid 1px @border_line_color;
+}
+/*---------right top main box (2)------------*/
+.hi-right-main-box
+{
+	border: solid 1px @border_line_color;
+	border-right: none;
+	border-top: none;
+}
+.hi-right-content h4
+{
+	font-family: @main_text_font;
+	color: @sub_head_color;
+}
+.hi-right-content p
+{
+	color: @main_text_color;
+}
+.hi-right-icon-ring
+{
+	border: solid 1px @border_line_color;
+}
+/*----------left bottom main box (3)--------*/
+.hi-left-down-main-box
+{
+	border: solid 1px @border_line_color;
+	border-bottom: none;
+	border-left: none;
+}
+.hi-left-down-content h4
+{
+	font-family: @main_text_font;
+	color: @sub_head_color;
+}
+.hi-left-down-content p
+{
+	color: @main_text_color;
+}
+.hi-left-down-icon-ring
+{
+	border: solid 1px @border_line_color;
+}
+/*---------right top main box (4)------------*/
+
+.hi-right-down-main-box
+{
+	border: solid 1px @border_line_color;
+	border-bottom: none;
+	border-right: none;
+}
+.hi-right-down-content h4
+{
+	font-family: @main_text_font;
+	color: @sub_head_color;
+}
+.hi-right-down-content p
+{
+	color: @main_text_color;
+}
+.hi-right-down-icon-ring
+{
+	border: solid 1px @border_line_color;
+}
+/*-===-===-===-====-hover section-===-==-==--==--*/
+/* 1st block*/
+.hi-left-main:hover .hi-left-content h4 
+{
+	color: @promcolor;
+}
+.hi-left-main:hover .hi-left-icon-ring
+{
+	background-color: @border_line_color; 
+
+}
+/*2nd block (top-right)*/
+.hi-right-main:hover .hi-right-content h4 
+{
+	color: @promcolor;
+}
+.hi-right-main:hover .hi-right-icon-ring
+{
+	background-color: @border_line_color; 
+}
+/*3rd blcok {bottom-left)*/
+
+.hi-left-down-main:hover .hi-left-down-content h4 
+{
+	color: @promcolor;
+}
+.hi-left-down-main:hover .hi-left-down-icon-ring
+{
+	background-color: @border_line_color; 
+}
+/*4th block (bttom-right) */
+.hi-right-down-main:hover .hi-right-down-content h4 
+{
+	color: @promcolor;
+}
+.hi-right-down-main:hover .hi-right-down-icon-ring
+{
+	background-color: @border_line_color; 
+}
+/*/////////////////////////////////multilevel parallax section////////////////////////////////*/
+
+.parallax-main h1
+{
+    color:@promcolor;
+    font-family:@main_text_font;
+}
+.parallax-main h1 span
+{
+    color:#fff;
+}
+.parallax-main p
+{
+    font-family: @main_text_font;
+    color:@neg_text_color;
+}
+
+/*mlt btn section*/
+.mlt-btn
+{
+	border: solid 1px #fff;
+}
+.mlt-btn-center span
+{
+	color: #fff;
+	font-family: @main_text_font;
+}
+.mlt-btn:hover .mlt-btn-left
+{
+	background-color: #fff;
+}
+.mlt-btn:hover .mlt-btn-center span
+{
+	color: @promcolor;
+} 
+
+/*////////////////////////////////////////service section/////////////////////////////////////*/
+#service
+{
+	background-color: @main_page_bg;
+}
+.main-head
+{
+	font-family: @main_head_font;
+}
+.main-head h1
+{
+	color: @main_head_color;
+}
+.main-head h2
+{
+	color: @sub_head_color;
+}
+.main-head p
+{
+	font-family: @main_spcl_font, serif;
+	color: @main_text_color;
+}
+/*--------------------service content area---------------------------------*/
+.ser-content-main
+{
+	border: solid 2px @border_line_color;
+}
+.ser-box
+{
+	border: solid 2px @border_line_color;
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+}
+.ser-box img
+{
+	color: #fff;
+}
+.ser-content-main h2
+{
+	font-family: @sub_text_font;
+	color: @sub_head_color;
+}
+.ser-content-main p
+{
+	font-family: @main_text_font;
+	color: @main_text_color;
+}
+.ser-content-main:hover h2
+{
+	color: 	@promcolor;
+}
+/*----------------------------------------price boxes----------------------------------------------*/
+/*--------PRICE HEADING----------*/
+.price-head
+{
+	font-family: @main_head_font;
+}
+.price-head h1
+{
+	color: @main_head_color;
+}
+.price-head h2
+{
+	color: @sub_head_add_color;
+}
+.price-head p
+{
+	font-family: @main_spcl_font, serif;
+	color: @neg_text_color;
+}
+/*-------------price content---------------*/
+/*background items*/
+.bg-price-box
+{
+	background-color: @promcolor;
+}
+.bg-price-ring
+{
+	border: solid 3px #fff;
+}
+.bg-price-ring a
+{
+	font-family: @main_num_font;
+	color: #fff;
+}
+.bg-price-box p
+{
+	font-family: @main_text_font;
+	color: #fff;
+}
+.bg-price-box h2
+{
+	font-family: @main_head_font;
+	color: #fff;
+}
+/*forground items*/
+.fg-right-hover
+{
+	background-color: #626262;
+}
+.fg-price-ring
+{
+	border: solid 3px #fff;
+}
+.fg-price-ring a
+{
+	font-family: @main_num_font;
+	color: #fff;
+}
+.fg-right-hover ul
+{
+	font-family: "nexa_r";
+}
+.fg-right-hover ul li
+{
+	color: #fff;
+}
+.fg-right-hover ul li span
+{
+	color: @main_text_color;
+}
+/*price button*/
+.price-btn
+{
+	border:solid 2px #fff;
+}
+.fg-btn-hover
+{
+	background-color: #fff;
+}
+.price-btn a
+{
+	color: #fff;
+	font-family: "nexa_b";
+}
+.fg-btn-hover a
+{
+	color: #333;
+	font-family: "nexa_b";
+}
+/*price owl pagenation*/
+.owl_price .owl-controls .owl-page span
+{ 
+	background-color: @promcolor !important;
+}
+.owl_price .owl-controls .owl-page.active span
+{
+	background-color: @promcolor !important;
+}
+/*------------------------------PORTFOLIO SECTION STRATED------------------------------------*/
+#portfolio
+{
+	background-color: @main_page_bg;
+}
+/*---ajax trigger close----*/
+.ajax_close
+{
+	color: #cfcfcf;
+}
+.ajax_close span a
+{
+	color: @promcolor;		
+}
+.port-head
+{
+	font-family:@main_head_font;
+}
+.port-head h1
+{
+	color: @main_head_color;
+}
+.port-head h2
+{
+	color: @sub_head_color;
+}
+/*----------sub menu-----------*/
+.port-nav ul li span
+{
+	color: @main_text_color;
+}
+.port-nav ul li a
+{
+	font-family: @main_text_font;
+	color: @main_text_color;
+}
+.port-nav ul li a:hover
+{
+	color: @promcolor;
+}
+/*-------portfolio content area--------*/
+.icon-color-active
+{
+	color: @promcolor !important;
+}
+.port-ico-img i
+{
+	color: #e2e2e2;
+}
+.fg-port-left
+{
+	background-color: rgba(0,0,0,0.4);
+}
+.fg-port-sland-left
+{
+	background-color: @promcolor;
+}
+.fg-port-sland-left-content h2
+{
+	font-family: @main_text_font;
+	color: #fff;
+}
+.fg-port-sland-left-content h1
+{
+	font-family: @main_head_font;
+	color: #fff;	
+}
+.port-btn a
+{
+	color: #fff;
+	background-color: @promcolor;
+}
+.port-btn a:hover
+{
+	background-color: @main_text_color;
+}
+/*------------------------------------CLIENT SECTION STARTED-------------------------------------*/
+#clients
+{
+	background-color: @main_page_bg;
+}
+.member-content h1
+{
+	font-family: @main_text_font;
+	color: @main_head_color;
+}
+.member-content p
+{
+	font-family: @main_text_font;
+	color: @main_text_color;
+}
+/*-------member btn section------*/
+.mem-btn-box
+{
+	background-color: #D4C6A7;
+}
+.mem-btn-box a
+{
+	color: @promcolor;
+	font-family: @main_text_font;
+}
+.mem-btn-ovl
+{
+	background-color: @promcolor; 
+}
+.mem-btn-ovl a
+{
+	color: #fff;
+	font-family: @main_text_font;
+}
+/*------2nd btn--------*/
+.mem-btn-box-2
+{
+	background-color: #D4C6A7;
+}
+.mem-btn-box-2 a
+{
+	color: @promcolor;
+	font-family: @main_text_font;
+}
+.mem-btn-ovl-2
+{
+	background-color: @promcolor; 
+}
+.mem-btn-ovl-2 a
+{
+	color: #fff;
+	font-family: @main_text_font;
+}
+/*-------------------------------- ---figures section-----------------------------------------*/
+.fig-text h2
+{
+	font-family: @main_head_font;
+	color: #fff;
+}
+.fig-text h4
+{
+	font-family: @main_text_font;
+	color: @promcolor;
+}
+/*------------------------------------------team section-----------------------------------------*/
+#team
+{
+	background-color: #fff;
+}
+/*-------------1st type box--------------------*/
+.team-fg-area path
+{
+	fill: @promcolor;
+    stroke: @promcolor; 
+}
+.team-content h2
+{
+	font-family: @main_text_font;
+	color: #fff;
+}
+.team-content h5
+{
+	font-family: "nexa_r";
+	color: #fff;
+}
+.team-content p
+{
+	font-family: @main_text_font;
+	color: @neg_text_color;
+}
+.team-btn
+{
+	border: solid 1px #fff; 	
+}
+.team-btn-left
+{
+	background-color: #fff;
+}
+.team-btn-right i
+{
+	color: #fff;
+}
+.team-btn:hover
+{
+	border: solid 1px rgba(0,0,0,0.0); 
+}
+.team-btn:hover .team-btn-left
+{
+	top:0;
+	left: 0;
+}
+.team-btn:hover .team-btn-right i
+{
+	color: @promcolor;
+}
+/*-------------2nd type box--------------------*/
+.team-fg-area-2 path
+{
+	fill: #E02A2A;
+}
+.team-content-2 h2
+{
+	font-family: @main_text_font;
+	color: #fff;
+}
+.team-content-2 h5
+{
+	font-family: "nexa_r";
+	color: #fff;
+}
+.team-content-2 p
+{
+	font-family: @main_text_font;
+	color: @neg_text_color;
+}
+/*-------------------------------testimonial section started------------------------------------*/
+.testi-content
+{
+	text-align: center;
+}
+.testi-content p
+{
+	font-family: @main_text_font;
+	color: @main_text_color;
+}
+.testi-img-box img
+{
+	border: solid 4px #fff;
+}
+.testi-name-section h2
+{
+	font-family: @main_text_font;
+	color: @promcolor;
+}
+.testi-name-section h4
+{
+	font-family: @sub_text_font;
+	color: @sub_head_color;
+}
+.testi-rating i
+{
+	color: @promcolor;
+}
+/*owl navigation*/
+.testimonials_owl .owl-controls .owl-page span
+{ 
+	background-color: @promcolor !important;
+}
+.testimonials_owl .owl-controls .owl-page.active span
+{
+	background-color: @promcolor !important;
+}
+/*------------------------------------social linke section----------------------------------*/
+.social-main
+{
+	font-family: @sub_text_font;
+	color: #fff;
+}
+.social-main span
+{
+	color: @promcolor;
+}
+/*-----------main social ring button styles---------------*/
+.inter-btn
+{
+	border: solid 1px #fff; 	
+}
+.inter-btn-left
+{
+	background-color: #fff;
+}
+.inter-btn-right i
+{
+	color: #fff;
+}
+.inter-btn:hover
+{
+	border: solid 1px rgba(0,0,0,0.0);
+}
+.inter-btn:hover .inter-btn-right i
+{
+	color: @promcolor;
+}
+/*-------------------------owl added contact section-----------------------------------------*/
+#contact
+{
+	background-color: @main_page_bg;
+}
+.con-owl-slide-3
+{
+	background-color: #e2e2e2;
+}
+/*CONTACT HEAD SECTION*/
+.con-head-main
+{
+	font-family: @main_head_font;
+}
+.con-head-main h1
+{
+	color: @main_head_color; 
+}
+.con-head-main h2
+{
+	color: @sub_head_color; 
+}
+/*contact form section*/
+.con-in-box input
+{
+	border: solid 1px @border_line_color;	
+	color: @sub_head_color;
+	font-family: @main_text_font;
+}
+/*text area boxes*/
+.con-icon-box-text
+{
+	background-color: @promcolor; 
+}
+.con-icon-box-text i
+{
+	color: #fff;
+}
+.con-in-box-text textarea
+{
+	border: solid 1px @border_line_color;	
+	color: @sub_head_color;
+	font-family: @main_text_font;
+}
+/*contact btn*/
+.con-in-box-btn
+{
+	border: solid 1px @border_line_color;
+	color: @sub_head_color;
+	font-family: @main_text_font;
+}
+.con-in-box-btn:hover
+{
+	background-color: @border_line_color;
+	color: @promcolor;
+}
+/*---address section---*/
+.con-add-conent
+{
+	font-family: @main_text_font;
+}
+.con-add-conent h4
+{
+	color: @main_text_color;
+}
+.con-add-conent h5
+{
+	color: @main_text_color;
+}
+/*additional*/
+.con-add-conent-sub
+{
+	font-family: @main_text_font;
+}
+.con-add-conent-sub h5
+{
+	color: @main_text_color;
+}
+/*---------------------------------------------------------------------
+Validation 
+-----------------------------------------------------------------------*/
+.theme-error
+{
+  font-family: @main_text_font;
+  color: #FC3232;
+}
+.theme-success
+{
+  font-family: @main_text_font;
+  color: #3AFC53;
+}
+/*------------------*/
+.gmap3
+{
+    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+/*---------contact navigation--------------------*/
+/*owl pagenation*/
+.contact_owl .owl-controls .owl-page span
+{ 
+	background-color: @promcolor !important;
+	color: #fff;
+	font-family: @main_text_font;
+}
+.contact_owl .owl-controls .owl-page.active span
+{
+	background-color: @promcolor !important;
+	font-family: @main_text_font;
+}
+/*-----------------------------------twitter area started-----------------------------------*/
+.tweet-ovl
+{  	
+	background: rgba(0,0,0,0.9);
+}
+.tweet-logo i
+{
+	background-color: @promcolor; 
+	color: #fff;
+}
+.wide_callaction 
+{
+    color: #FFF;
+}
+.wide_callaction #ticker a {
+    color: #FFF;
+    font-family:@main_text_font;
+}
+.tweet_outro
+{
+	font-family:"nexa_b" !important;
+}
+.tweet_time a
+{
+	font-family:@main_text_font !important;
+}
+/*---------------------------footer section started----------------------------------*/
+.footer-main
+{
+	background-color: #252525;
+}
+.foot-img
+{
+	background-color: @promcolor;
+}
+
+.footer-copy p
+{
+	color: #656565;
+	font-family: @main_text_font;
+}
+.footer-copy p span
+{
+	color: @promcolor;	
+}
+
+/*-----------footer social ring button styles---------------*/
+.footer-btn
+{
+	border: solid 1px #656565;
+}
+.footer-btn-left
+{
+	background-color: #fff;
+}
+.footer-btn-right i
+{
+	color: #656565;
+}
+.footer-btn:hover
+{
+	border: solid 1px rgba(0,0,0,0.0);
+}
+.footer-btn:hover .footer-btn-right i
+{
+	color: @promcolor;
+}
+/*============================================================================================
+								mlt-parallax custom less
+==============================================================================================*/
+
+/*----------------------parent parallax section------------------------------------*/
+#bottle>div:nth-of-type(2){
+    background: @ovl_parallax_color;  
+}
+/*------------------------------parallax additional (price) section----------------------------*/
+#price-bg-main>div:nth-of-type(2){
+    background: @ovl_parallax_color;
+}
+/*------------------------------parallax additional (figure) section--------------------------*/
+.parallax-main-3 h1
+{
+    color: @promcolor;
+    background: @ovl_parallax_color;
+    font-family: @main_head_font;
+}
+/*--------------------------parallax additional (testimonial) section--------------------------*/
+#testi-bg-main>div:nth-of-type(2){
+    background: #f1f1f1;
+}
+.parallax-main-4 h1
+{
+    color: @promcolor;
+    font-family: @main_head_font;
+}
+/*------------------------------parallax additional (social) section-----------------------------*/
+
+#social-bg-main>div:nth-of-type(2)
+{
+    background: @ovl_parallax_color;
+}
+
+/*============================================================================================
+					          project styles (ajax expasion)
+==============================================================================================*/
+.pro-bg-main
+{
+	background-color: #333;
+}
+/*-----content area-----*/
+.project-head h3
+{
+	font-family: @main_text_font;
+	color: #fff;
+}
+.pro-head-line
+{
+	background-color: @promcolor;
+}
+.pro-text p
+{
+	font-family: @main_text_font;
+	color: #cfcfcf;
+}
+/*project btn area*/
+.pro-btn-main a
+{
+	font-family: @main_text_font;
+	color: #fff;
+	border: solid 1px @promcolor;
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+}
+.pro-btn-main a:hover
+{
+	color: @promcolor;
+}
+/*owl navigation*/
+.pro_owl .owl-controls .owl-page span
+{ 
+	color: @promcolor;
+}
+.pro_owl .owl-controls .owl-page.active span
+{
+	background-color: @promcolor !important;
+	font-family: @main_text_font;
+}
+/* -----------------------project 2 styles--------------------------------*/
+.pro2-head
+{
+	font-family: @main_text_font;
+}
+.pro2-head h1
+{
+	color: @sub_head_color;
+}
+.pro2-head h1 span
+{
+	color: @promcolor;
+}
+.pro2-head h5
+{
+	color: @main_text_color;
+}
+.pro2-icon-ring
+{
+	border: solid 1px #cfcfcf;
+}
+.pro2-icon-ring i
+{
+	color: #999;
+}
+.pro2-icon-ring:hover
+{
+	border: solid 1px @sub_head_color;
+}
+.pro2-icon-ring:hover i
+{
+	color: @sub_head_color;
+}
+/*center portion*/
+.pro2-center
+{
+	background-color: @promcolor;
+}
+.pro2-center-nav a
+{
+	color: #fff;
+	font-family: @main_text_font;
+}
+.pro2-text
+{
+	font-family: @main_text_font;
+}
+.pro2-text p
+{
+	color: @main_text_color;
+}
+/*-------3rd project styles------*/
+.pro3-bg
+{
+	background-color: #333;
+}
+.pro3-heading
+{
+	font-family: @main_text_font;
+	color: #fff;
+}
+.pro3-text p
+{
+	color: #fff;
+	font-family: @main_text_font;
+}

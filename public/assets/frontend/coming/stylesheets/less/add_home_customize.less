@@ -1,0 +1,308 @@
+
+/*==========================================================================================
+						            additional home styles
+============================================================================================*/
+/*----------------------------------less color options----------------------------------------*/
+
+@promcolor: #ea2e2b;        /*---------theme prominent color------------*/
+
+@home_page_head:#fff;		/*---------home page header color------------*/
+
+@home_text_color:fff;       /*---------home page text color------------*/
+
+@home_sub_text_color:333;   /*---------home page text color------------*/
+
+
+/*------------------------------less color overlay options-----------------------------------*/
+
+@ovl_home_color:rgba(0,0,0,0.8);      /*--------- home overlay ------------*/
+
+/*----------------------------------less font options----------------------------------------*/
+
+@home_head_font: "Open Sans";       /*---------main head font------------*/
+
+@sub_text_font: "Raleway";          /*---------sub heads and text font------------*/
+
+@main_home_font: "nexa_b";          /*---------home head font------------*/
+
+@main_head_font: "Montserrat";      /*---------main heading font------------*/
+
+@main_num_font: "Roboto Slab";      /*---------number fonts------------*/
+
+
+
+/*===================================================================
+                    parallax home styles
+=====================================================================*/
+
+/*----------------------home parallax section------------------------------------*/
+#para-home>div:nth-of-type(2)
+{
+    background: rgba(0,0,0,0.2);
+}
+
+.para-home-text
+ {
+ 	background :@ovl_home_color;
+ }
+.para-home-text h1
+{
+	font-family: @home_head_font;
+	color: @home_page_head;
+}
+.para-home-text h1 span
+{
+	color: @promcolor;
+}
+.para-home-text p
+{
+	font-family: @home_head_font;
+	color: @home_text_color;
+}
+.para-home-main img
+{
+	background-color :@promcolor;
+}
+/*===================================================================
+                        slider home home styles
+=====================================================================*/
+
+/*----content section 1st----*/
+.slide-1-content span
+{
+	background: #e8e4d4;
+	color: @home_sub_text_color;
+	font-family: @home_head_font;
+}
+.slide-1-head
+{
+	color: #e8e4d4;
+}
+.slide-1-head h2
+{
+	font-family: @home_head_font;
+}
+.slide-1-head h5
+{
+	font-family: @home_head_font;
+}
+/*----content section 3rd----*/
+.slide-2-content h2
+{
+	color: @home_page_head;
+	font-family: @home_head_font;
+}
+.slide-2-content h1
+{
+	color: @promcolor;
+	font-family: @main_head_font;
+}
+/*----content section 2nd----*/
+.slide-3-content h1
+{
+	color: @home_page_head;
+	font-family: @main_head_font;
+}
+.slide-3-content h1 span
+{
+	color: @promcolor;
+}
+.slide-3-content h2
+{
+	color: @home_text_color;
+	font-family: @home_head_font;
+}
+/*-----slider controls------*/
+.slide-cntrl-wrapper ul li
+{
+	border: solid 1px #fff;
+}
+ul.slideControl li:hover, ul.slideControl li.current {
+    border: solid 1px @promcolor;
+}
+ul.slideControl li.current
+{
+	background-color: @promcolor;
+}
+#timer
+{
+	background:rgba(255,255,255,0.3);
+}
+/*===================================================================
+                        bold home styles
+=====================================================================*/
+
+.bold-home-text-main p
+{
+	font-family: @home_head_font;
+	color: @home_sub_text_color;
+}
+.bold-home-text-main h1
+{
+	font-family: @main_home_font;
+	color:@promcolor;
+}
+.bold-home-text-main h5
+{
+	font-family: @home_head_font;
+	color: @home_sub_text_color;
+}
+/*===================================================================
+                        content home styles
+=====================================================================*/
+.content-home-text-main h1
+{
+	font-family: @main_home_font;
+	color: @promcolor;
+}
+.content-home-text-main h1 span
+{
+	color: @home_page_head;
+}
+.content-home-text-main h5
+{
+	font-family: @home_head_font;
+	color: #999;
+}
+/*------navigation related-----*/
+.customNavigation a
+{
+    color: #fff;
+}
+
+.prev i
+{
+	color: #fff;
+	
+	border: solid 1px #999;    
+}
+.next i
+{
+	color: #fff;
+	border: solid 1px #999;    
+}
+.prev i:hover
+{
+	color: @promcolor; 
+	border: solid 1px #f7f7f7;
+}
+.next i:hover
+{
+	color: #ea2e2b; 
+	border: solid 1px #f7f7f7;
+}
+/*==========================================================
+	  super slides(slider-2) simple slider home syles 
+============================================================*/
+.main-ovl-bg-slide
+{
+	background: rgba(0,0,0,0.4);
+}
+/*--------navigation-------*/
+.slides-navigation a
+{
+	color: #fff;
+	background: rgba(0,0,0,0.6);
+}
+.slides-navigation a:hover
+{
+	color: @promcolor;
+}
+/*------nav completed-----*/
+/*slide 1st*/
+.slide-home-content h1
+{
+	color: @home_page_head;
+	font-family:@home_head_font;
+}
+.slide-home-content h1 span
+{
+	color: @promcolor;
+}
+.slide-home-content h5
+{
+	color: @home_page_head;
+	font-family:@home_head_font;
+}
+/*HOME BTN*/
+.slide-home-btn a
+{
+	font-family: @home_head_font;
+	color: #fff;
+}
+.slide-home-btn span
+{
+	color: @promcolor;
+}
+.slide-home-btn a:hover
+{
+	color: @promcolor;
+}
+/*-----slide2------*/
+
+.slide-home-content-2 h1
+{
+	color: @home_page_head;
+	font-family:@home_head_font;
+}
+.slide-home-content-2 h1 span
+{
+	color: @promcolor;
+}
+.slide-home-content-2 p
+{
+	color: @home_text_color;
+	font-family:@home_head_font;
+}
+/*HOME BTN*/
+.slide-home-btn-2 a
+{
+	border: solid 1px #fff;
+	font-family: @home_head_font;
+	color: #fff;
+}
+.slide-home-btn-2 a:hover
+{
+	color: #555;
+	background-color: #fff;
+}
+/*-----slide3------*/
+.slide-home-content-3 h2
+{
+	color: @home_page_head;
+	font-family:@home_head_font;
+}
+.slide-home-content-3 h5
+{
+	color: @home_page_head;
+	font-family:@home_head_font;
+}
+.slide-home-content-3 p
+{
+	color: @home_text_color;
+	font-family:@home_head_font;
+}
+/*HOME BTN*/
+.slide-home-btn-3 a
+{
+	border: solid 1px #fff;
+	font-family: @home_head_font;
+	color: #fff;
+}
+.slide-home-btn-3 span
+{
+	color: @promcolor;
+}
+.slide-home-btn-3 a:hover
+{
+	color: #555;
+	background-color: #fff;
+}
+/*=============================================================
+					video home page styles
+===============================================================*/
+/*video stylesheet*/
+.main-ovl-bg-video
+{
+	background:rgba(0,0,0,0.4);
+}
